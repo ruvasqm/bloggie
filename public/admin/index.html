@@ -10,6 +10,7 @@
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
+      import { es } from 'netlify-cms-locales/es';
       CMS.registerPreviewStyle(
         "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
       );
@@ -28,6 +29,7 @@
         },
       });
       CMS.registerPreviewTemplate("posts", PostPreview);
+      CMS.registerLocale('es', es);
     </script>
   </body>
 </html>
